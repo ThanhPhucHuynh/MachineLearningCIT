@@ -98,7 +98,7 @@ dataset1 = pd.read_csv('winequality-white.csv',
 
 data = dataset1
 
-haha = ID3(data[0:100],data[0:100],data[0:100].columns[:-1],'quality',None)
+# haha = ID3(data[0:100],data[0:100],data[0:100].columns[:-1],'quality',None)
 
 
 nhan=np.unique(data.quality)
@@ -143,5 +143,5 @@ np.unique(data)
 a =confusion_matrix(y_test[0:6],y_pred[0:6],labels= nhan)
 print(a)
 print(bcolors.OKBLUE+"Cay quyet dinh cho data[0:100] \n"+bcolors.ENDC)
-print(haha)
+# print(haha)
 # print(bcolors.WARNING + "Warning: No active frommets remain. Continue?" + bcolors.ENDC+"ádasd")
